@@ -5,11 +5,10 @@ class Solution(object):
         :rtype: int
         """
         count=0
-        while num>0:
+        while num!=0:
+            count+=1
             if num%2==0:
                 num//=2
-                
             else:
-                num=num-1
-            count+=1
-        return count
+                num-=1  
+        return count 
