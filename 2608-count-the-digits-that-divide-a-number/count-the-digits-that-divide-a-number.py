@@ -8,7 +8,7 @@ class Solution(object):
         main=num
         while num!=0:
             rem=num%10
-            if rem != 0 and main % rem == 0:
+            if main % rem == 0:
                 count+=1
             num//=10
         return count
