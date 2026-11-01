@@ -15,7 +15,7 @@ public:
         if(dp[i][j]!= -1)   return dp[i][j];
 
         if(s1[i] == s2[j]){
-            return solve(i+1, j+1, s1, s2);
+            return dp[i][j] = solve(i+1, j+1, s1, s2);
         }
 
         int delete_s1 = s1[i] + solve(i+1, j, s1, s2);
